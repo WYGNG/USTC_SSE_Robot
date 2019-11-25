@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/sayHello.dir/useHello.c.o  -o ../bin/sayHello  -L/home/wyg/homework1 -Wl,-rpath,/home/wyg/homework1:/home/wyg/homework1/build/lib ../lib/libsayHello.so 

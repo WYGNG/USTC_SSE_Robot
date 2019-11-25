@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libsayHello.so -o ../lib/libsayHello.so CMakeFiles/include.dir/hello.c.o 
