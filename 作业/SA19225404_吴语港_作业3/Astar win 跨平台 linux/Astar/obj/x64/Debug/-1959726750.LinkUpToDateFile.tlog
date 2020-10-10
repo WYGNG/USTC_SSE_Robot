@@ -1,0 +1,1 @@
+g++ -o "/home/wyg/projects/Astar/bin/x64/Debug/Astar.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/wyg/projects/Astar/obj/x64/Debug/astar.o /home/wyg/projects/Astar/obj/x64/Debug/costmap.o /home/wyg/projects/Astar/obj/x64/Debug/grid_path.o /home/wyg/projects/Astar/obj/x64/Debug/main.o /home/wyg/projects/Astar/obj/x64/Debug/pch.o

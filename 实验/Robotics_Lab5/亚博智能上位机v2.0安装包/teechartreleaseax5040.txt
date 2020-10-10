@@ -1,0 +1,156 @@
+===========================================
+ TeeChart Pro Activex Control v5
+ Copyright (c) 1997-2002
+ by David Berneda and
+ Marc Meumann
+ All Rights Reserved.
+
+ http://www.steema.com
+ email: info@steema.com
+        supportx@steema.com
+
+===========================================
+ July 2002
+ TeeChart Pro Activex Control v5 
+ v5.0.4.0 Release notes:
+=====================================
+
+For information about differences and use of 
+TeeChart Pro ActiveX v5 with respect to
+TeeChart Pro ActiveX v4 please refer to the 
+'Upgrading from TeeChart v4.doc' document 
+accessible via the TeeChart Program Manager 
+group.
+
+===========================================
+
+Changes for this release:
+-------------------------
+
+Bugs resolved:
+
+1. Print Preview from TeeCommander for 
+   multi-page Charts in v5.0.3.x functioned
+   incorrectly. Now resolved.
+
+2. ZoomPen definition failed to save in tee
+   files. Now resolved.
+
+3. Integer overflow error reported after 
+   multiple zooms. Now resolved.
+
+4. The property 'Controls' in TeeCommander 
+   coincides with a protected word in VBA. 
+   To permit access to this functionality 
+   in VBA the method has been duplicated 
+   with name 'Buttons'.
+
+5. Omission in previous releases, the
+   OffsetValues ValueList for Bar3D Series
+   is accessible by code for this release.
+
+6. Omission in previous releases, MACD 
+   function has new Period3 property.
+
+7. Visual Studio.NET doesn't support the 
+   passing as Interface of the Chart to the
+   TeePreviewPanel AddChart method. A
+   substitute AddChartLink has been added
+   for this release to accept ChartLink.
+
+8. The keyword 'Months' as a database field
+   name was incompatible with prior 
+   translation system for non-english 
+   language versions' db access via the 
+   Editor. Now resolved.
+
+9. TeePolar/Radar Series problem when 
+   labelling datasets of 13, 19, 25, etc.
+   values. Internal rounding error resolved.
+
+10.Help button on Chart Editor not 
+   functioning. Now resolved.
+
+New features:
+
+1. DeleteRange method added to permit block
+   delete of several points from a Series.
+
+2. Custom Axis index now returned from all
+   events that return Axis as an integer.
+
+3. Scroll Mousebutton now selectable by code.
+
+4. The TeeChart Utilities folder now includes
+   Strong Named DLL assemblies of TeeChart
+   and TeeChart with Windows wrapper for use
+   with Visual Studio.NET projects that 
+   require to be Strong Named.
+
+Changes to note:
+
+1. VC++ developers should note that the location
+   of TeeShapePanel's Bevel has been moved to
+   TeeCustomShape.
+
+Previous Changes 
+(from release v5.0.3 but still noteworthy)
+
+1. Developers upgrading VC++ projects to TeeChart 
+   v5.0.3 should note that the Series property has 
+   been deprecated to comply with an import 
+   restriction to Microsoft's Visual Studio .NET.
+   .Net fails to import indexed properties that 
+   reside at the root level of an ActiveX Control.
+   The property has been replaced by a method of
+   the same name. The old Series property has been
+   renamed to aSeries but retains its DispId to 
+   support existing, non-changed code and already
+   compiled applications. When upgrading VC++ 
+   classes to the latest version it should suffice
+   in all standard cases to change calls of:
+
+     Get_Series
+
+     to
+ 
+     Series 
+
+2. Internet Explorer stopped supporting TeeChart's
+   IPersistStream content save from IE v5.5sp2 
+   onwards ! TeeChart's persist technique now 
+   changed to: first choice IPropertyBag, second 
+   choice IPersistStream (used by .NET for example). 
+   The changes to TeeChart's persist technique 
+   should be transparent and should not cause any 
+   inconvenience though you may note the difference 
+   on updated Frontpage saved web pages where old
+   data content will remain and can be removed 
+   manually. The new save format in TeeChart on an 
+   HTML page will take the format: 
+    
+     <param name="Base64" value="..some content..">
+
+
+===========================================
+Key known unresolved issues:
+
+- ChartEditorPanel not supported in MS 
+  VC++ applications due to incorrect 
+  behaviour of Editor buttons
+- Right Axis Arrows click area not located 
+  correctly on 3D Charts
+- StopMouse not working correctly in
+  DBlClick event
+- Datasets set via the Chart Editor and requiring
+  password access need the 'save password' option
+  to be selected in the ADO dialogue. This is not
+  a requirement when setting up an ADO connection
+  via code.
+- Dragdrop events not functioning in .NET.
+- Only one TeeChart AX event is triggered, per 
+  page, for a WebForm in ASP.Net.
+===========================================
+http://www.steema.com
+email: supportx@steema.com
+-------------------------------------------

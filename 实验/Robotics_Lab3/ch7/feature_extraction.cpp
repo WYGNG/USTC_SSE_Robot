@@ -67,6 +67,7 @@ int main ( int argc, char** argv )
     {
         if ( matches[i].distance <= max ( 2*min_dist, 30.0 ) )
         {
+            // 符合条件的匹配加入优化后的匹配
             good_matches.push_back ( matches[i] );
         }
     }

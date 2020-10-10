@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  astar.cpp
+g:\users\wyg\桌面\科软\2_学习\3_专业课_大数据与人工智能\robot\作业\sa19225404_吴语港_作业3\robotic2019_homework3\astar_demo_ustc\astar_planner\astar.cpp(57): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  costmap.cpp
+  grid_path.cpp
+g:\users\wyg\桌面\科软\2_学习\3_专业课_大数据与人工智能\robot\作业\sa19225404_吴语港_作业3\robotic2019_homework3\astar_demo_ustc\astar_planner\grid_path.cpp(46): warning C4018: “<”: 有符号/无符号不匹配
+  main.cpp
+  正在生成代码...
+  Astar_planner.vcxproj -> G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Debug\Astar_planner.exe

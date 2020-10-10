@@ -1,0 +1,11 @@
+Deliver high performance charting solutions. teeChart Pro allows
+you to create general purpose and specialized chart and graphing
+applications for all areas including business, engineering,
+financial, statistical, scientific, medical, real-time, and the
+web. Features a chart gallery with several chart types including
+2D or 3D line, bar, horizontal bar, area, point, pie, arrow,
+bubble, Gantt, surface, volume, polar, and many more. Use the
+Chart Editor to customize your charts.
+
+License Number: 6919081 
+ActiveX Password: 869253614259258

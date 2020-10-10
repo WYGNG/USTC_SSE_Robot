@@ -1,0 +1,9 @@
+由于系统镜像文件过大，资料可通过以下的百度网盘下载系统镜像。
+百度网盘下载链接：http://pan.baidu.com/s/1eStlF8m 密码：pjfa
+
+网盘内包含：
+1、树莓派配置好Raspbian系统镜像（自带WIFI热点版）出厂版本
+2、树莓派配置好的Raspbian系统镜像（连接自家WIFI版）
+3、树莓派Raspbian官方原始系统镜像
+4、树莓派Ubuntu_mate官方原始系统镜像
+5、树莓派win 10 IOT系统镜像

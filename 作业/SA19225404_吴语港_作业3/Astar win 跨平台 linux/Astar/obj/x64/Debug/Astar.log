@@ -1,0 +1,25 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.8.170'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  astar.cpp
+  costmap.cpp
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.h(22,7): warning : ‘costmap::Costmap::end_y_’ will be initialized after [-Wreorder]
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.h(22,7): warning :    int end_y_;
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.h(22,7): warning :        ^~~~~~
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.h(18,7): warning : ‘int costmap::Costmap::ns_’ [-Wreorder]
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.h(18,7): warning :    int ns_;
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.h(18,7): warning :        ^~~
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.cpp(7,2): warning : when initialized here [-Wreorder]
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.cpp(8,88): warning : passing NULL to non-pointer argument 1 of ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = std::vector<char>; _Alloc = std::allocator<std::vector<char> >; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<char> >]’ [-Wconversion-null]
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.cpp(8,88): warning :    nx_(0), ny_(0), start_x_(0), start_y_(0), end_x_(0), end_y_(0), ns_(0), costmap_(NULL) {
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\costmap.cpp(8,88): warning :                                                                                         ^
+  grid_path.cpp
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\grid_path.cpp(46,21): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\grid_path.cpp(46,21): warning :    for (int i = 1; i < path.size() - 1; i++) {
+G:\Users\WYG\桌面\科软\2_学习\3_专业课_大数据与人工智能\Robot\作业\SA19225404_吴语港_作业3\Robotic2019_homework3\Astar_Demo_USTC\Astar_planner\grid_path.cpp(46,21): warning :                    ~~^~~~~~~~~~~~~~~~~
+  main.cpp
+  pch.cpp
+  Linking objects
+  Astar.vcxproj -> C:\Users\WYG\source\repos\Astar\Astar\bin\x64\Debug\Astar.out

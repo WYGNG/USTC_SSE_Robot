@@ -1,0 +1,24 @@
+所有库都已经编译好，不用再vs工程中再去配置。
+
+1.包含Directshow\Inc目录下的dshow.h头文件
+  并导入库
+
+例如：
+  #include ".\\Directshow\\inc\\DShow.h"
+  #include <strmif.h>
+  #pragma comment(lib,".\\Directshow\\lib\\x86\\strmiids.lib")
+
+
+如果要用一些dshow特殊功能，例如智能指针，则包含：
+#include ".\\Directshow\\common\\SmartPtr.h"
+
+如果要用samplegrabber filter，则要包含
+#include ".\\Directshow\\inc\\Qedit.h"
+
+(samplegrabber 这个filter在qedit.dll中)
+
+
+  也可以自己做个头文件，以后换工程包含自己的头文件就可以了
+
+
+                  --稻谷成熟了

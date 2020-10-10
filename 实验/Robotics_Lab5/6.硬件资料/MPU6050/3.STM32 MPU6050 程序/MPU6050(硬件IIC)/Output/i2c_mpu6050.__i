@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\USER -I..\FWlib\inc -I..\CMSIS -I "D:\Èí¼þ\Keil uvision4\keil\ARM\INC" -I "D:\Èí¼þ\Keil uvision4\keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\i2c_mpu6050.o" --omf_browse "..\Output\i2c_mpu6050.crf" --depend "..\Output\i2c_mpu6050.d" "I2C_MPU6050.c"

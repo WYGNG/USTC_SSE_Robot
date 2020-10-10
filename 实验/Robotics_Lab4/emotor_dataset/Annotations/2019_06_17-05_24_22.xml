@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>2019_06_17-05_24_22.jpg</filename>
+	<path>E:\VOC2007_9_6\JPEGImages\2019_06_17-05_24_22.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>emotor</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>285</xmin>
+			<ymin>6</ymin>
+			<xmax>461</xmax>
+			<ymax>365</ymax>
+		</bndbox>
+	</object>
+</annotation>

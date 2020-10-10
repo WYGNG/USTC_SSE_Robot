@@ -1,0 +1,26 @@
+<annotation>
+	<folder>4</folder>
+	<filename>000802.jpg</filename>
+	<path>/home/hzq0/automobile_recognition/4/000802.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>290</xmin>
+			<ymin>60</ymin>
+			<xmax>477</xmax>
+			<ymax>398</ymax>
+		</bndbox>
+	</object>
+</annotation>

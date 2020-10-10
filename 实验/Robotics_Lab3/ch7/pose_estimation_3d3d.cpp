@@ -102,6 +102,7 @@ int main ( int argc, char** argv )
 
     vector<KeyPoint> keypoints_1, keypoints_2;
     vector<DMatch> matches;
+    //特征点匹配
     find_feature_matches ( img_1, img_2, keypoints_1, keypoints_2, matches );
     cout<<"一共找到了"<<matches.size() <<"组匹配点"<<endl;
 
@@ -127,6 +128,8 @@ int main ( int argc, char** argv )
 
     cout<<"3d-3d pairs: "<<pts1.size() <<endl;
     Mat R, t;
+
+    //ICP法相机姿态估计
     pose_estimation_3d3d ( pts1, pts2, R, t );
     cout<<"ICP via SVD results: "<<endl;
     cout<<"R = "<<R<<endl;
@@ -135,6 +138,7 @@ int main ( int argc, char** argv )
     cout<<"t_inv = "<<-R.t() *t<<endl;
 
     cout<<"calling bundle adjustment"<<endl;
+
 
     bundleAdjustment( pts1, pts2, R, t );
 
@@ -210,13 +214,14 @@ Point2d pixel2cam ( const Point2d& p, const Mat& K )
            );
 }
 
+// ICP法相机姿态估计
 void pose_estimation_3d3d (
     const vector<Point3f>& pts1,
     const vector<Point3f>& pts2,
     Mat& R, Mat& t
 )
 {
-    Point3f p1, p2;     // center of mass
+    Point3f p1, p2;     //质心
     int N = pts1.size();
     for ( int i=0; i<N; i++ )
     {
@@ -259,6 +264,7 @@ void pose_estimation_3d3d (
     t = ( Mat_<double> ( 3,1 ) << t_ ( 0,0 ), t_ ( 1,0 ), t_ ( 2,0 ) );
 }
 
+// 图优化相关
 void bundleAdjustment (
     const vector< Point3f >& pts1,
     const vector< Point3f >& pts2,

@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\USER -I..\FWlib\inc -I..\CMSIS -I "D:\Èí¼þ\Keil uvision4\keil\ARM\INC" -I "D:\Èí¼þ\Keil uvision4\keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\usart1.o" --omf_browse "..\Output\usart1.crf" --depend "..\Output\usart1.d" "usart1.c"

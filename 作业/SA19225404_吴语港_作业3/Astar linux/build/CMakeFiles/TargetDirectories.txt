@@ -1,0 +1,3 @@
+/home/wyg/桌面/Astar/build/CMakeFiles/rebuild_cache.dir
+/home/wyg/桌面/Astar/build/CMakeFiles/Astar.dir
+/home/wyg/桌面/Astar/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\亚博开发板\亚博大板工程\平衡小车\stm32版本\光盘资料\3.硬件资料\2.MPU6050\3.STM32 MPU6050 程序\MPU6050(硬件IIC)\USER\I2C_MPU6050.uvproj
+Project File Date:  08/27/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=6272 RO-data=336 RW-data=48 ZI-data=1024  
+FromELF: creating hex file...
+"..\Output\systick.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=6332 RO-data=336 RW-data=48 ZI-data=1024  
+FromELF: creating hex file...
+"..\Output\systick.axf" - 0 Error(s), 0 Warning(s).
